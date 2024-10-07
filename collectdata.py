@@ -64,17 +64,17 @@ while True:
     frame = cv2.resize(frame,(48,48))
     interrupt = cv2.waitKey(10)
     if interrupt & 0xFF == ord('a'):
-        cv2.imwrite(os.path.join(directory+'A/'+str(count['a']))+'.jpg',frame)
+        cv2.imwrite(os.path.join(directory+'A/'+str(count['a']))+'.png',frame)
     if interrupt & 0xFF == ord('b'):
-        cv2.imwrite(os.path.join(directory+'B/'+str(count['b']))+'.jpg',frame)
+        cv2.imwrite(os.path.join(directory+'B/'+str(count['b']))+'.png',frame)
     if interrupt & 0xFF == ord('c'):
-        cv2.imwrite(os.path.join(directory+'C/'+str(count['c']))+'.jpg',frame)
+        cv2.imwrite(os.path.join(directory+'C/'+str(count['c']))+'.png',frame)
     if interrupt & 0xFF == ord('d'):
-        cv2.imwrite(os.path.join(directory+'D/'+str(count['d']))+'.jpg',frame)
+        cv2.imwrite(os.path.join(directory+'D/'+str(count['d']))+'.png',frame)
     if interrupt & 0xFF == ord('e'):
-        cv2.imwrite(os.path.join(directory+'E/'+str(count['e']))+'.jpg',frame)
+        cv2.imwrite(os.path.join(directory+'E/'+str(count['e']))+'.png',frame)
     if interrupt & 0xFF == ord('f'):
-        cv2.imwrite(os.path.join(directory+'F/'+str(count['f']))+'.jpg',frame)
+        cv2.imwrite(os.path.join(directory+'F/'+str(count['f']))+'.png',frame)
     if interrupt & 0xFF == ord('g'):
         cv2.imwrite(os.path.join(directory+'G/'+str(count['g']))+'.jpg',frame)
     if interrupt & 0xFF == ord('h'):
@@ -116,5 +116,5 @@ while True:
     if interrupt & 0xFF == ord('z'):
         cv2.imwrite(os.path.join(directory+'Z/'+str(count['z']))+'.jpg',frame)
     if interrupt & 0xFF == ord('.'):
-        cv2.imwrite(os.path.join(directory+'blank/' + str(count['blank']))+ '.jpg',frame)
+        cv2.imwrite(os.path.join(directory+'blank/' + str(count['blank']))+ '.png',frame)
 
